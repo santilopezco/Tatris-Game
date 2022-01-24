@@ -1,0 +1,217 @@
+@font-face {
+    font-family: 'comic';
+    src: url(../fonts/ComicNeue-Bold.ttf);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/Background.jpg);
+    background-size: 100vw 100vh;
+}
+
+header {
+    margin: 1.5rem;
+}
+
+header img {
+    width: 100%;  
+}
+
+h1{
+    font-size: 1.3rem;
+    margin: 1.2rem 0;
+}
+
+p {
+    font-family: 'comic';
+}
+
+span {
+    font-family: 'comic';
+}
+
+.timer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.timer p{
+    color: aqua;
+    font-size: 2rem;
+}
+
+#controls img{
+    width: 4.5rem;
+}
+
+#controls{
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    color: aqua;
+}
+
+#down, #down2{
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+#left, #left2{
+    transform: rotate(270deg);
+    cursor: pointer;
+}
+
+#right, #right2{
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+#rotate, #rotate2{
+    cursor: pointer;
+}
+
+
+.bold{
+    font-weight: bold;
+}
+
+.d-none{
+    display: none;
+}
+#controls-desktop{
+    display: none;
+    color: aqua;
+}
+
+
+.btnTotals {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.btn {
+    font-family: 'comic';
+    height: 1.8em;
+    width: 2.9em;
+    font-size: 2em;
+    background: linear-gradient(70deg, #C0DDE3, aqua);
+    border: solid 1px white;
+    color: #333;
+    border-radius: 0.4em;
+    margin: 0em 0.5em 0.2em;
+}
+
+@media only screen and (max-width: 600px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header{
+        margin: 0.8rem;
+    }
+
+    header img {
+        width: 85vw;
+    }
+
+    .information{
+        width: 100%;
+    }
+    
+    .timer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .timer p{
+        font-size: 1rem;
+    }
+
+    #controls-desktop{
+        display: none;
+    }
+
+    a {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    main{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 99vw;
+        flex-direction: row;
+    }
+
+    .information {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid white;
+        height: 87vh;
+    }
+
+
+
+    .timer{
+        height: 15em;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .timer p{
+        margin: 1rem;
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    #controls-desktop{
+        margin: 1rem;
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #controls-desktop div{
+        margin-top: 1rem;
+    }
+
+    #controls-desktop div p {
+        margin-left: 1.5em;
+    }
+
+    #controls {
+        display: none;
+    }
+}

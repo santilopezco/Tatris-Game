@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./js/keypress-2.1.5.min.js"></script>
+    <title>Tetris</title>
+</head>
+<body onload="init()">
+    <header>
+        <img src="./images/TETRIS LOVING CODERS.png" alt="">
+    </header>
+    <main>
+        <section class="information">
+            <div class="timer">
+                <p>Time: <span id="countDown"></span></p>
+                <p><span class="bold">Score:</span> 0</p>
+            </div>
+            <div id="controls-desktop">
+                <div class="bold"><p>Controls:</p></div><br>
+                <div class="">
+                    <img src="./images/arrow-up.png" id="down2" width="50px">
+                    <span>Move Down</span><br>
+                </div>
+                <div>
+                    <img src="./images/arrow-up.png" id="left2" width="50px">
+                    <span>Move Left</span><br>
+                </div>
+                <div>
+                    <img src="./images/arrow-up.png" id="right2" width="50px">
+                    <span>Move Right</span><br>
+                </div>
+                <div>
+                    <img src="./images/arrow-up.png" id="rotate2" width="50px">
+                    <span>Rotate</span>
+                </div>
+            </div>
+            <div class="btnTotals">
+                <div class="btnPause">
+                    <a href=""><button onclick="fPause(true)" class="btn">Pause</button></a>
+                </div>
+                <div class="btnReset">
+                    <a href=""><button onclick="fReset(true)" class="btn">Reset</button></a>
+                </div>
+            </div>
+        </section>
+        <canvas id="canvas"></canvas>
+        <div id="controls">
+            <img src="./images/arrow-up.png" id="left">
+            <img src="./images/arrow-up.png" id="down">
+            <img src="./images/arrow-up.png" id="right">
+            <img src="./images/rotate.png" id="rotate">
+        </div>        
+    </main>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
